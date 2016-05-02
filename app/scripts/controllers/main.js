@@ -102,6 +102,7 @@ angular.module('dauriaSearchApp')
       }
     };
 
+    //leaflet-angular-directive
     angular.extend($scope, {
       bounds: bounds,
       center: { lat: 1, lng: 1, zoom: 2 }, // show global to start
@@ -133,7 +134,7 @@ angular.module('dauriaSearchApp')
 
     $scope.$watchGroup(['bounds','dateRangeStart','dateRangeEnd'], function() {
       $scope.cleanPaths();
-      $scope.execQuery();
+      $scope.execQuery();//Queries the Api for resources.
     });
 
     $scope.$watchGroup(['cloudCoverageMin', 'cloudCoverageMax', 'sunAzimuthMin', 'sunAzimuthMax'], function() {

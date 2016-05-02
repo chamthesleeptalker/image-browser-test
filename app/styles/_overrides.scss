@@ -1,0 +1,41 @@
+#libra_content{
+	height:90%;
+}
+
+#libra_nav{
+	height:auto;
+
+	.navbar{
+		margin-bottom: 0px;
+	}
+	.container{
+		height:100%;
+		max-width: 100%;
+		width:100%;
+	}
+	.navbar-right {
+	    width: 33.33%;
+	}
+	nav{
+		background-color: lighten(black,30%);
+		a{
+			color:white;
+			&:focus{
+				background-color: lighten(black,10%);		
+			}
+		}
+	}
+	.active{
+		background-color: lighten(black,20%);
+		a{
+			background-color: lighten(black,20%);	
+		}		
+	}
+}
+
+.left-side,.right-side{
+    height: -webkit-calc(100% - 50px);
+    height:    -moz-calc(100% - 50px);
+    height:         calc(100% - 50px);
+	top:50px;
+}
